@@ -12,7 +12,7 @@ a {text-decoration: none;}
     font-weight: 800;
     color: #f9faf8;
     margin: 0;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 .content p,
 .header a,
@@ -50,10 +50,14 @@ button{
     width: 1000px;
     margin: 100px 0;
     display: flex;
+    gap: 12px;
 }
-
+.content p{
+    /* margin: 12px 0; */
+    margin-right: 42px;
+}
 .content img{
-    max-width: 300px;
+    max-height: 300px;
 }
 
 
@@ -73,22 +77,50 @@ button:hover{
     cursor: pointer;
 }
 
-
-
+.info{
+    text-align: center;
+    padding-bottom: 40px ;
+}
 .info h2{
     font-size: 36px;
     font-weight: 800;
     color: #1F2937;
+    padding: 20px;
 }
+.info-container{
+    display: flex;
+    justify-content: center;
+    gap: 0 64px;
+}
+.info-contents p {
+    max-width: 200px;
+    margin-top: 8px;
+    
+} 
+
+.info-contents img{
+    max-width: 190px;
+    border: 5px solid #1F2937;
+    border-radius: 12px;
+}
+
+
+.quote p {margin: 8px 0; box-sizing: border-box;}
 .quote {
-    background-color: #e5e7eb;    
+    background-color: #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 0 80px 0;
 }
 .quote-text{
     font-size: 36px;
     font-weight: 200;
     font-style: italic;
     color: #1F2937;
+    max-width: 800px;
 }
 .quote-author{
     font-size: 24px;
+    text-align: right;
 }
