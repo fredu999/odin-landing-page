@@ -11,9 +11,12 @@ a {text-decoration: none;}
     font-size: 48px;
     font-weight: 800;
     color: #f9faf8;
+    margin: 0;
+    margin-bottom: 40px;
 }
 .content p,
-.header a{
+.header a,
+button{
     font-size: 18px;
     color: #e5e7eb;
 }
@@ -45,9 +48,9 @@ a {text-decoration: none;}
 }
 .content{
     width: 1000px;
+    margin: 100px 0;
+    display: flex;
 }
-
-
 
 .content img{
     max-width: 300px;
@@ -57,7 +60,21 @@ a {text-decoration: none;}
 button, 
 .sign-up {
     background-color: #3882f6;
+    border-radius: 8px;
 }
+button{
+    padding: 10px 20px;
+    border-style: none;
+    transition-duration: 300ms;
+}
+button:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+
 .info h2{
     font-size: 36px;
     font-weight: 800;
